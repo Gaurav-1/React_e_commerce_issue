@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    outline: none;
+}
+
+body{
+    background-color: rgba(245, 245, 245, 1);
+}
+
+::-webkit-scrollbar{
+	width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: darkgray;
+	outline: 0px solid lightgray;
+	border-radius: 3px;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: transparent;
+}

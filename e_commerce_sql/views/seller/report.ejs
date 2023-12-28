@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link rel="stylesheet" href="/Stylesheets/seller_report.css">
+    <link rel="stylesheet" href="/Stylesheets/header.css">
+</head>
+<body>
+    <%- include('header') %>
+    <div id="main">
+        <div id="operation">
+            <select name="category" id="category">
+                <option value="product_id">Product</option>
+                <option value="order_date">Ordred Date</option>
+                <option value="order_quantity">Order Quantity</option>
+                <option value="order_status">Order Status</option>
+            </select>
+            <button type="button" id="search">Generate</button>
+        </div>
+
+        <div id="sub-main">
+            <div id="data_table">
+                  <div id="table_div"></div>              
+            </div>
+            <div id="chart">
+                <div id="donutchart"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="/Scripts/seller_report.js"></script>
+</body>
+</html>

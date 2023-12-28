@@ -1,0 +1,83 @@
+.blur_bg{
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(1px);
+}
+
+.popup{
+    container-type: inline-size;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-45%);
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    overflow: auto;
+    background-color: #fff;
+    box-shadow: 0 0 8px 6px #aaa;
+    border-radius: 15px;
+    border: 3px solid #aaa;
+}
+
+.closePopUp{
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(228 50 183);
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+.cancel_form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cancel_type{
+    width: 250px;
+    height: 30px;
+}
+
+.cancel_reason{
+    width: 250px;
+    height: 150px;
+}
+
+.operation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cancelBtn{
+    border: none;
+    width: 250px;
+    height: 40px;
+    background: rgb(255 20 21);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}

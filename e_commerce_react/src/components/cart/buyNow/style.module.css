@@ -1,0 +1,45 @@
+.place_order{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.5s ease-in-out;
+    animation: fadeIn 3s;
+}
+
+
+@keyframes fadeIn {
+    from{ top: -100px; }
+    to{ bottom: 0; }
+}
+
+.heading{
+    text-align: center;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details>*{
+    height: 35px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn>button{
+    background-color: coral;
+    color: #fff;
+    border: none;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}

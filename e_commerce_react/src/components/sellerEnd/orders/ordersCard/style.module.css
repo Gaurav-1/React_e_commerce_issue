@@ -1,0 +1,53 @@
+.card{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    background-color: rgb(93 102 217);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px #555555;
+}
+
+img{
+    width: 200px;
+    height: auto;
+}
+
+.product_details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 250px;
+}
+
+.order_details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 250px;
+}
+
+.payment_details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 250px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+}
+
+.expoters{
+    width: 150px;
+    height: 40px;
+}

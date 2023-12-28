@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders for you</title>
+    <link rel="stylesheet" href="/Stylesheets/my_orders.css">
+    <link rel="stylesheet" href="/Stylesheets/header.css">
+</head>
+<body>
+    <%- include('header') %>
+    <div id="main">
+        <div id="orders"></div>
+    </div>
+    <div id="cancel_order">
+        <h2>Cancel Order</h2>
+        <label for="cancel_reason">Cancel Reason</label>
+        <textarea name="cancel_reason" id="cancel_reason" cols="30" rows="10"></textarea>
+        <button type="button" class="cancelorderBtn btn">Cancel Order</button>
+    </div>
+
+    <script src="/Scripts/my_order.js"></script>
+</body>
+</html>

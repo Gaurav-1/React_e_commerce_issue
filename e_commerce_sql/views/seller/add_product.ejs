@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="/Stylesheets/add_product.css">
+    <link rel="stylesheet" href="/Stylesheets/header.css">
+</head>
+<body>
+    <%- include('header.ejs') %>
+    <div class="product_mode">
+        <label><input type="radio" name="mode" id="single" value="single" checked> Single Product</label>
+        <label><input type="radio" name="mode" id="multiple" value="multiple"> Bulk Product</label>
+    </div>
+    <div class="container" id="single_product">
+        <h1>Add Product</h1>
+        <div class="sub-container">
+            <div class="fields">
+                <label>Product Name</label>
+                <label>Product Description</label>
+                <label>Product Price</label>
+                <label>Product Quantity</label>
+                <label>Product Image</label>
+            </div>
+            <div class="sub-container">
+                <form id="product-form" name="product-form" enctype="multipart/form-data" class="fields">
+                    <input type="text" id="name" name="names" oninput="names_chk()">
+                    <input type="text" id="desc" name="desc" oninput="desc_chk()">
+                    <input type="number" id="price" name="price" oninput="price_chk()">
+                    <input type="number" id="quantity" name="quantity" oninput="quantity_chk()">
+                    <input type="file" id="image" name="productImage" oninput="image_chk()">
+                </form>
+            </div>
+        </div>
+        <div>
+            <button id="add-productBtn" >Add Product</button>
+        </div>
+    </div>
+    <div class="container" id="multiple_product">
+        <h1>Add Products</h1>
+        <div class="sub-container">
+            <div class="fields">
+                <label for="product_link">Bulk URL</label>
+                <label>Name filed</label>
+                <label>Description filed</label>
+                <label>Price filed</label>
+                <label>Quantity filed</label>
+                <label>Image filed</label>
+            </div>
+            <div class="sub-container">
+                <form id="bulk-form" name="bulk-form" enctype="multipart/form-data" class="fields">
+                    <input type="text" name="url" id="url">
+                    <input type="text" id="name" name="names">
+                    <input type="text" id="desc" name="desc">
+                    <input type="text" id="price" name="price">
+                    <input type="text" id="quant" name="quantity">
+                    <input type="text" id="img" name="productImage">
+                </form>
+            </div>
+        </div>
+        <button type="button" id="bulk">Add Products</button>
+    </div>
+
+    <script src="/Scripts/seller_product.js"></script>
+</body>
+</html>

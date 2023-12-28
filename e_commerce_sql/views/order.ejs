@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="/Stylesheets/order.css">
+    <link rel="stylesheet" href="/Stylesheets/header.css">
+</head>
+<body>
+    <%- include('header') %>
+    <div id="container">
+        <form id="order_form">
+            <label for="">Name</label>
+            <input type="text" name="user_name" id="user_name">
+            <label id="nameErr"></label>
+
+            <label for="">Contact Number</label>
+            <input type="number" name="contact_no" id="contact_no">
+            <label id="contactErr"></label>  
+
+            <label for="">House No/Society</label>
+            <input type="text" name="house_no" id="house_no">
+            <label id="houseErr"></label>
+
+            <label for="">City</label>
+            <input type="text" name="city" id="city">
+            <label id="cityErr"></label>
+            
+            <label for="">State</label>
+            <input type="text" name="state" id="state">
+            <label id="stateErr"></label>
+            
+            <label for="">Landmark (optional)</label>
+            <input type="text" name="landmark" id="landmark">
+            <label id="landmarkErr"></label>
+
+            <label for="">payment mode</label>
+            <select name="payment_option" id="payment_option">
+                <option value="cash_on_delivery">C.O.D</option>
+            </select>
+            <label id="nameErr"></label>
+            <div>
+                <button type="button" id="orderBtn">Order Now</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/Scripts/order.js"></script>
+</body>
+</html>

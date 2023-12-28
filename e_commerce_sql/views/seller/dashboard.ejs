@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/Stylesheets/admin_dashboard.css">
+    <link rel="stylesheet" href="/Stylesheets/header.css">
+</head>
+<body>
+    <%- include('header') %>
+
+    <div id="display_product"></div>
+
+    <!-- <div id="load-more">
+        <button id="load-moreBtn">Load More</button>
+    </div> -->
+
+    <div>
+        <label for="max">Select result count</label>
+        <select name="max" id="max">
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+        <button type="button" id="load-moreBtn">Load</button>
+    </div>
+
+    <script src="/Scripts/seller.js" type="module"></script>
+</body>
+</html>

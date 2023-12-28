@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/Stylesheets/admin_dashboard.css">
+    <link rel="stylesheet" href="/Stylesheets/dashboard.css">
+    <link rel="stylesheet" href="/Stylesheets/header.css">
+    <style>
+    #display_product{
+        display: grid;
+        grid-template-columns: 17% 17% 17% 17%;
+        grid-row-gap: 10px;
+        grid-column-gap: 3%;
+        margin-top: 70px;
+        padding: 5px;
+    }
+    #bill{
+        margin-top: 90px;
+    }
+    #total>tr>td{
+        border: 1px solid black;
+    }
+    </style>
+</head>
+<body>
+    <%- include('header') %>
+    <div id="container">
+        <div id="display_product"></div>
+        <div id="bill">
+            <table id="total">
+                <thead>
+                    <tbody colspan="3" style="text-align: center;">BILL</tbody>
+                </thead>
+            </table>
+            <button id="buynowBtn">Buy Now</button>
+        </div>
+    </div>
+    <script src="/Scripts/cart.js"></script>
+</body>
+</html>

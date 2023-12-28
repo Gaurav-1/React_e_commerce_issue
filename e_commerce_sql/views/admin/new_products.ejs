@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/Stylesheets/admin_dashboard.css">
+    <link rel="stylesheet" href="/Stylesheets/header.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/simplePagination.min.css"> 
+</head>
+<body>
+    <%- include('header') %>
+
+    <div id="display_product"></div>
+    
+    <div class="limit">
+        <label for="max">Select result count</label>
+        <select name="max" id="max">
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+        <div id="pagination"></div>
+        <script> 
+            $('#pagination').pagination({ 
+                items: 9, 
+                itemsOnPage: 4,  
+                onPageClick: function (noofele) { 
+                    
+                } 
+            }); 
+        </script>   
+        <button type="button" id="load-moreBtn">Load</button>
+    </div>   
+    <script src="/Scripts/approve_product.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #fff;
+    box-shadow: 1px 2px 5px 5px #ccc;
+    width: 310px;
+    padding: 10px 5px ;
+    border-radius: 5px 5px 10px 10px;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+}
+
+.inputs, .labels{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    gap: 5px;
+}
+
+.labels{
+    gap: 15px;
+}
+
+.input{
+    height: 20px;
+}
+
+.product-image{
+    width: 300px;
+    height: auto;
+}
+
+.operations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.updateBtn,.deleteBtn,.detailsBtn{
+    width: 110px;
+    height: fit-content;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.updateBtn{
+    border: 1px solid #0ca9e7;
+    color: #0ca9e7;
+}
+.updateBtn:hover{
+    color: white;
+    background: #0ca9e7;
+}
+
+.deleteBtn{
+    border: 1px solid #6e6e6e;
+    color: #1f1f1f;
+}
+
+.deleteBtn:hover{
+    background: #6e6e6e;
+    color: white;
+}

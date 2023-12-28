@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e4e4e4;
+    font-family: Georgia, sans-serif;
+}
+
+.navbar{
+    padding: 10px;
+}
+
+#container{
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+input{
+    display: block;
+    width: 200px;
+    height: 25px;
+    margin: 5px 10px 0px 10px;
+}
+
+.err{
+    font-size: 14px;
+    color: red;
+    margin-left: 10px;
+}

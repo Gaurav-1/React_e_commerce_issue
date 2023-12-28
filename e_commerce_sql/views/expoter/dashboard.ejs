@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders for you</title>
+    <link rel="stylesheet" href="/Stylesheets/seller_order.css">
+    <link rel="stylesheet" href="/Stylesheets/header.css">
+</head>
+<body>
+    <%- include('header') %>
+    <div id="main">
+        <div id="operation">
+            <select name="orderStatus" id="orderStatus">
+                <option value="Arriving">Arriving</option>
+                <option value="Arrived">Arrived</option>
+            </select>
+            <button type="button" id="search">GO</button>
+        </div>
+
+        <div id="orders"></div>
+    </div>
+
+    <script src="/Scripts/expoter.js"></script>
+</body>
+</html>

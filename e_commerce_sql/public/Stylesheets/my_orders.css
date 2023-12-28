@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center ;
+}
+
+.navbar{
+    padding: 10px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 90px auto 20px auto;
+}
+
+span{
+    color: rgb(255, 255, 255);
+}
+
+#orders{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    background-color: rgb(93 102 217);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px #555555;
+}
+
+img{
+    width: 200px;
+    height: auto;
+}
+
+.product_details{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 350px;
+}
+
+.order_details{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 350px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+}
+
+#cancel_order{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+#cancel_reason{
+    width: 300px;
+    height: 200px;
+}
